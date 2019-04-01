@@ -24,7 +24,7 @@ pre{max-width:100%;height:auto;white-space:pre-wrap}
 {{ partial "header.html" . }}
 <body>
 <div class="parent">
-{{ range (where .Data.Pages "Type" "post")}}
+{{ range (where .Data.Pages "Type" "posts")}}
 <div><div class="pd">{{ .Date.Format "Jan 2006" }}</div><a href="{{ .Permalink }}">{{ .Title }}</a></div>
 {{ end }}
 </div>
