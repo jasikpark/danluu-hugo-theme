@@ -21,7 +21,7 @@ pre{max-width:100%;height:auto;white-space:pre-wrap}
 <meta name="description" content="{{ .Description }}">
 <link href="{{ .Site.BaseURL }}/atom.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 <meta name="google-site-verification" content="" />
-{{ template "theme/partials/header.html" . }}
+{{ template "themes/danluu-hugo-theme/partials/header.html" . }}
 <body>
 <div class="parent">
 {{ range (where .Data.Pages "Type" "post")}}
@@ -29,4 +29,4 @@ pre{max-width:100%;height:auto;white-space:pre-wrap}
 {{ end }}
 </div>
 <br>
-{{ template "theme/partials/footer.html" . }}
+{{ template "themes/danluu-hugo-theme/partials/footer.html" . }}
